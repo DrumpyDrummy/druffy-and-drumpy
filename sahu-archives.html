@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,7 +9,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+
 
 <style>
 
@@ -17,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
 
@@ -31,47 +35,62 @@ body {
     );
 
     min-height: 100vh;
+
     color: #F6EBDD;
+
     font-family: 'Cormorant Garamond', serif;
+
     padding: 50px;
 
 }
 
 
 
+
 .header {
 
     text-align: center;
+
     margin-bottom: 60px;
 
 }
 
 
+
 h1 {
 
     font-family: 'Special Elite', monospace;
+
     font-size: 3.5rem;
+
     letter-spacing: 4px;
 
 }
 
 
 
+
 .classified {
 
     margin-top: 20px;
+
     font-family: 'Special Elite', monospace;
+
     font-size: 1.2rem;
+
     color: #D8B98A;
 
 }
 
 
 
+
 .note {
 
     margin-top: 25px;
+
     font-family: 'Dancing Script', cursive;
+
     font-size: 1.8rem;
 
 }
@@ -79,14 +98,19 @@ h1 {
 
 
 
+
 .desk {
 
     max-width: 1100px;
+
     margin: auto;
+
     position: relative;
-    min-height: 850px;
+
+    min-height: 900px;
 
 }
+
 
 
 
@@ -94,16 +118,25 @@ h1 {
 .item {
 
     position: absolute;
+
     background: #F6EBDD;
+
     color: #4A3325;
+
     padding: 25px;
+
     width: 230px;
+
     text-align: center;
+
     text-decoration: none;
+
     box-shadow: 0 15px 25px rgba(0,0,0,.35);
+
     transition: .3s;
 
 }
+
 
 
 .item:hover {
@@ -118,14 +151,18 @@ h1 {
 .file {
 
     font-family: 'Special Elite', monospace;
+
     font-size: 1.2rem;
 
 }
 
 
+
+
 .small {
 
     font-size: .9rem;
+
     margin-top: 15px;
 
 }
@@ -133,12 +170,17 @@ h1 {
 
 
 
+/* PHOTO POLAROIDS */
+
 
 .photo {
 
     background: white;
+
     padding: 15px;
+
     width: 190px;
+
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
 
 }
@@ -148,21 +190,18 @@ h1 {
 .photo div {
 
     height: 160px;
+
     background: #D8C7B0;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     color: #6B4935;
+
     font-family: 'Special Elite', monospace;
-
-}
-
-
-
-.photo:before {
-
-    content: "";
-    position: absolute;
 
 }
 
@@ -173,17 +212,39 @@ h1 {
 .photo1 {
 
     top: 40px;
+
     left: 40px;
+
     transform: rotate(-8deg);
 
 }
 
 
 
+
+.photo2 {
+
+    bottom: 100px;
+
+    right: 50px;
+
+    transform: rotate(8deg);
+
+}
+
+
+
+
+
+/* FILE POSITIONS */
+
+
 .fbi {
 
     top: 80px;
+
     right: 80px;
+
     transform: rotate(6deg);
 
 }
@@ -193,7 +254,9 @@ h1 {
 .terms {
 
     top: 320px;
+
     left: 260px;
+
     transform: rotate(-4deg);
 
 }
@@ -203,7 +266,9 @@ h1 {
 .awards {
 
     top: 350px;
+
     right: 220px;
+
     transform: rotate(7deg);
 
 }
@@ -212,8 +277,10 @@ h1 {
 
 .poems {
 
-    bottom: 80px;
+    bottom: 150px;
+
     left: 420px;
+
     transform: rotate(-6deg);
 
 }
@@ -221,25 +288,23 @@ h1 {
 
 
 
-.photo2 {
-
-    bottom: 60px;
-    right: 50px;
-    transform: rotate(8deg);
-
-}
-
-
+/* MUSIC */
 
 
 .music {
 
-    bottom: 250px;
+    bottom: 300px;
+
     right: 430px;
+
     background: #E8D3A8;
+
     width: 210px;
+
     transform: rotate(-5deg);
+
     font-family: 'Dancing Script', cursive;
+
     font-size: 1.5rem;
 
 }
@@ -247,23 +312,79 @@ h1 {
 
 
 
+
+/* STICKY NOTE */
+
+
 .sticky {
 
     position: absolute;
-    bottom: 30px;
+
+    bottom: 40px;
+
     left: 50px;
+
     background: #E8D3A8;
+
     color: #4A3325;
+
     padding: 20px;
+
     width: 220px;
+
     transform: rotate(-5deg);
+
     font-family: 'Dancing Script', cursive;
+
     font-size: 1.4rem;
 
 }
 
 
+
+
+
+/* RETURN BUTTON */
+
+
+.home {
+
+    position: absolute;
+
+    bottom: -40px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #F6EBDD;
+
+    text-decoration: none;
+
+    border: 1px solid #F6EBDD;
+
+    padding: 12px 30px;
+
+    border-radius: 999px;
+
+    transition: .3s;
+
+}
+
+
+
+.home:hover {
+
+    background: #F6EBDD;
+
+    color: #4A3325;
+
+}
+
+
+
 </style>
+
 
 </head>
 
@@ -271,19 +392,24 @@ h1 {
 <body>
 
 
+
 <div class="header">
+
 
 <h1>
 THE SAHU ARCHIVES
 </h1>
 
 
+
 <div class="classified">
 
 CLASSIFIED<br>
+
 Access Level: Sahu Only
 
 </div>
+
 
 
 <div class="note">
@@ -293,12 +419,16 @@ Access Level: Sahu Only
 </div>
 
 
+
 </div>
 
 
 
 
+
 <div class="desk">
+
+
 
 
 
@@ -309,6 +439,7 @@ PHOTO
 </div>
 
 </div>
+
 
 
 
@@ -409,6 +540,7 @@ PHOTO
 
 PROPERTY OF:
 <br>
+
 Zahu ♡
 
 <br><br>
@@ -419,8 +551,22 @@ DO NOT LOSE.
 
 
 
+
+
+<a href="index.html" class="home">
+
+← return to our story ♡
+
+</a>
+
+
+
+
+
 </div>
 
 
+
 </body>
+
 </html>
