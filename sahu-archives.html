@@ -19,7 +19,16 @@
 }
 
 body {
-    background: #3B2416;
+    background:
+    linear-gradient(rgba(60,35,20,0.45), rgba(60,35,20,0.45)),
+    repeating-linear-gradient(
+        90deg,
+        #6b4024 0px,
+        #7a4b2b 40px,
+        #60381f 80px,
+        #8a5834 120px
+    );
+
     min-height: 100vh;
     color: #F6EBDD;
     font-family: 'Cormorant Garamond', serif;
@@ -27,7 +36,7 @@ body {
 }
 
 
-/* TITLE */
+/* HEADER */
 
 .header {
     text-align: center;
@@ -60,7 +69,7 @@ h1 {
     max-width: 1100px;
     margin: auto;
     position: relative;
-    min-height: 800px;
+    min-height: 850px;
 }
 
 
@@ -83,8 +92,6 @@ h1 {
 }
 
 
-/* FILES */
-
 .file {
     font-family: 'Special Elite', monospace;
     font-size: 1.2rem;
@@ -96,10 +103,10 @@ h1 {
 }
 
 
-/* PHOTO PLACEHOLDERS */
+/* PHOTOS */
 
 .photo {
-    background: #fff;
+    background: white;
     padding: 15px;
     width: 190px;
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
@@ -123,11 +130,13 @@ h1 {
     transform: rotate(-8deg);
 }
 
+
 .fbi {
     top: 80px;
     right: 80px;
     transform: rotate(6deg);
 }
+
 
 .terms {
     top: 320px;
@@ -135,17 +144,20 @@ h1 {
     transform: rotate(-4deg);
 }
 
+
 .awards {
     top: 350px;
     right: 220px;
     transform: rotate(7deg);
 }
 
+
 .poems {
     bottom: 80px;
     left: 420px;
     transform: rotate(-6deg);
 }
+
 
 .photo2 {
     bottom: 60px;
@@ -154,7 +166,20 @@ h1 {
 }
 
 
-/* STICKY NOTE */
+/* MUSIC STICKY NOTE */
+
+.music {
+    bottom: 250px;
+    right: 430px;
+    background: #E8D3A8;
+    width: 210px;
+    transform: rotate(-5deg);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+
+
+/* PROPERTY NOTE */
 
 .sticky {
     position: absolute;
@@ -207,13 +232,15 @@ PHOTO
 
 
 <a href="fbi-file.html" class="item fbi">
+
 <div class="file">
 🕵️ FBI FILE
 </div>
 
 <div class="small">
-Confidential evidence regarding Subject: Sahu
+Confidential evidence regarding Subject
 </div>
+
 </a>
 
 
@@ -248,6 +275,7 @@ Celebrating excellence in boyfriending.
 
 
 
+
 <a href="poems.html" class="item poems">
 
 <div class="file">
@@ -255,10 +283,26 @@ Celebrating excellence in boyfriending.
 </div>
 
 <div class="small">
-Some romantic. Some ridiculous.
+Shakespeare is quaking. 
 </div>
 
 </a>
+
+
+
+
+<a href="https://www.youtube.com/watch?v=Zd8bNW4DG5E" target="_blank" class="item music">
+
+<div class="file">
+🎵 DO NOT OPEN
+</div>
+
+<div class="small">
+Classified audio evidence
+</div>
+
+</a>
+
 
 
 
