@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>The Sahu Archives</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3B2416;
+    min-height: 100vh;
+    color: #F6EBDD;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 50px;
+}
+
+
+/* TITLE */
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-family: 'Special Elite', monospace;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+}
+
+.classified {
+    margin-top: 20px;
+    font-family: 'Special Elite', monospace;
+    font-size: 1.2rem;
+    color: #D8B98A;
+}
+
+.note {
+    margin-top: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+
+
+/* DESK */
+
+.desk {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    min-height: 800px;
+}
+
+
+/* ITEMS */
+
+.item {
+    position: absolute;
+    background: #F6EBDD;
+    color: #4A3325;
+    padding: 25px;
+    width: 230px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 15px 25px rgba(0,0,0,.35);
+    transition: .3s;
+}
+
+.item:hover {
+    transform: scale(1.08) rotate(0deg);
+}
+
+
+/* FILES */
+
+.file {
+    font-family: 'Special Elite', monospace;
+    font-size: 1.2rem;
+}
+
+.small {
+    font-size: .9rem;
+    margin-top: 15px;
+}
+
+
+/* PHOTO PLACEHOLDERS */
+
+.photo {
+    background: #fff;
+    padding: 15px;
+    width: 190px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+.photo div {
+    height: 160px;
+    background: #D8C7B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6B4935;
+}
+
+
+/* POSITIONS */
+
+.photo1 {
+    top: 40px;
+    left: 40px;
+    transform: rotate(-8deg);
+}
+
+.fbi {
+    top: 80px;
+    right: 80px;
+    transform: rotate(6deg);
+}
+
+.terms {
+    top: 320px;
+    left: 260px;
+    transform: rotate(-4deg);
+}
+
+.awards {
+    top: 350px;
+    right: 220px;
+    transform: rotate(7deg);
+}
+
+.poems {
+    bottom: 80px;
+    left: 420px;
+    transform: rotate(-6deg);
+}
+
+.photo2 {
+    bottom: 60px;
+    right: 50px;
+    transform: rotate(8deg);
+}
+
+
+/* STICKY NOTE */
+
+.sticky {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    background: #E8D3A8;
+    color: #4A3325;
+    padding: 20px;
+    width: 220px;
+    transform: rotate(-5deg);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+<h1>THE SAHU ARCHIVES</h1>
+
+<div class="classified">
+CLASSIFIED<br>
+Access Level: Sahu Only
+</div>
+
+<div class="note">
+✓ Memories &nbsp; ✓ Evidence &nbsp; ✓ Poetry &nbsp; ✓ Awards
+</div>
+
+</div>
+
+
+
+<div class="desk">
+
+
+<div class="photo photo1">
+<div>
+PHOTO
+</div>
+</div>
+
+
+
+<a href="fbi-file.html" class="item fbi">
+<div class="file">
+🕵️ FBI FILE
+</div>
+
+<div class="small">
+Confidential evidence regarding Subject: Sahu
+</div>
+</a>
+
+
+
+
+<a href="terms.html" class="item terms">
+
+<div class="file">
+⚖️ TERMS & CONDITIONS
+</div>
+
+<div class="small">
+Legally questionable.
+</div>
+
+</a>
+
+
+
+
+<a href="moon-awards.html" class="item awards">
+
+<div class="file">
+🏆 MOON AWARDS
+</div>
+
+<div class="small">
+Celebrating excellence in boyfriending.
+</div>
+
+</a>
+
+
+
+<a href="poems.html" class="item poems">
+
+<div class="file">
+✍️ POEMS
+</div>
+
+<div class="small">
+Some romantic. Some ridiculous.
+</div>
+
+</a>
+
+
+
+<div class="photo photo2">
+<div>
+PHOTO
+</div>
+</div>
+
+
+
+<div class="sticky">
+
+PROPERTY OF:
+<br>
+Zahu ♡
+<br><br>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
