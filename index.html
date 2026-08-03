@@ -1,86 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Druffy & Drumpy</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>Druffy & Drumpy</title>
 
-        body {
-            background: #0B0B14;
-            color: #F4EBDD;
-            font-family: 'Playfair Display', serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .container {
-            text-align: center;
-            padding: 30px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 
-        h1 {
-            font-size: 4rem;
-            line-height: 1.2;
-            font-weight: 600;
-            margin-bottom: 35px;
-        }
 
-        .subtitle {
-            font-family: 'Dancing Script', cursive;
-            font-size: 2rem;
-            margin-bottom: 45px;
-        }
+<style>
 
-        .button {
-            display: inline-block;
-            padding: 16px 36px;
-            border: 1px solid #F4EBDD;
-            color: #F4EBDD;
-            text-decoration: none;
-            border-radius: 999px;
-            transition: .3s;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .button:hover {
-            background: #F4EBDD;
-            color: #0B0B14;
-        }
 
-    </style>
+body {
+
+    background: #0B0B14;
+
+    color: #F4EBDD;
+
+    font-family: 'Playfair Display', serif;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+
+.container {
+
+    padding: 30px;
+
+}
+
+
+
+h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.question {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 2.3rem;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+input {
+
+    background: transparent;
+
+    border: 1px solid #F4EBDD;
+
+    color: #F4EBDD;
+
+    padding: 15px 25px;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+
+    text-align: center;
+
+    outline: none;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+input::placeholder {
+
+    color: #D8C7B0;
+
+}
+
+
+
+button {
+
+    display: block;
+
+    margin: auto;
+
+    padding: 14px 35px;
+
+    border-radius: 999px;
+
+    border: 1px solid #F4EBDD;
+
+    background: transparent;
+
+    color: #F4EBDD;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+}
+
+
+
+button:hover {
+
+    background: #F4EBDD;
+
+    color: #0B0B14;
+
+}
+
+
+.message {
+
+    margin-top: 25px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 1.4rem;
+
+}
+
+
+</style>
+
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-    <h1>
-        three years down,<br>
-        forever to go.
-    </h1>
 
-    <div class="subtitle">
-        happy anniversary baby ♡
-    </div>
+<h1>
+🔒 classified
+</h1>
 
-  <a class="button" href="story.html">
-    ♡ enter ♡
-</a>
+
+<div class="question">
+
+Makdi ke jaali mein kaun phass gaya tha? (hint: Ek Bada ____)
 
 </div>
+
+
+
+<input 
+type="text" 
+id="password"
+placeholder="enter answer">
+
+
+
+<button onclick="checkPassword()">
+
+enter ♡
+
+</button>
+
+
+<div class="message" id="message"></div>
+
+
+
+</div>
+
+
+
+<script>
+
+
+function checkPassword(){
+
+
+let answer = document
+.getElementById("password")
+.value
+.toLowerCase()
+.trim();
+
+
+
+if(answer === "Drumpy" || answer === "Drumpy"){
+
+window.location.href = "home.html";
+
+}
+
+
+else{
+
+document.getElementById("message").innerHTML =
+"Alley yaal Druffy! Wrong answer 😤 try again";
+
+}
+
+
+}
+
+
+</script>
+
+
 
 </body>
 </html>
